@@ -307,17 +307,60 @@
             line-height: 1.5;
         }
 
+        /* PROMINENT TCCM BADGE */
+        .tccm-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(0,240,255,0.06);
+            border: 2px solid rgba(0,240,255,0.4);
+            padding: 8px 18px;
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+        }
+        .tccm-badge:hover {
+            border-color: var(--cyan);
+            box-shadow: 0 0 15px rgba(0,240,255,0.25);
+        }
+        .tccm-badge .badge-icon-img {
+            width: 26px;
+            height: 26px;
+            object-fit: contain;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 5px rgba(0,240,255,0.5));
+        }
+        .tccm-badge .badge-text {
+            font-family: var(--retro-font);
+            font-size: 20px;
+            color: var(--cyan);
+            line-height: 1.5;
+        }
+        .tccm-badge .badge-text strong {
+            color: #fff;
+        }
+
         /* PROMINENT SOMA BADGE */
         .soma-badge {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             background: rgba(255,170,0,0.06);
             border: 2px solid rgba(255,170,0,0.4);
-            padding: 10px 18px;
+            padding: 8px 18px;
             margin-bottom: 20px;
+            transition: all 0.2s ease;
         }
-        .soma-badge .badge-icon { font-size: 24px; }
+        .soma-badge:hover {
+            border-color: var(--orange);
+            box-shadow: 0 0 15px rgba(255,170,0,0.25);
+        }
+        .soma-badge .badge-icon-img {
+            width: 26px;
+            height: 26px;
+            object-fit: contain;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 5px rgba(255,170,0,0.5));
+        }
         .soma-badge .badge-text {
             font-family: var(--retro-font);
             font-size: 20px;
@@ -710,11 +753,21 @@
 
                     <br>
 
+                    <!-- PROMINENT: TCCM Agency Badge -->
+                    <div class="tccm-badge">
+                        <img src="images/tccm-logo.png" alt="TCCM Agency" class="badge-icon-img">
+                        <div class="badge-text">
+                            Leader — <strong>TCCM Agency</strong>
+                        </div>
+                    </div>
+
+                    <br>
+
                     <!-- PROMINENT: SOMA Badge -->
                     <div class="soma-badge">
-                        <span class="badge-icon">🏢</span>
+                        <img src="images/soma-logo.png" alt="SOMA" class="badge-icon-img">
                         <div class="badge-text">
-                            Founder — <strong>Công Ty TNHH Thương Mại Và Sản Xuất SOMA</strong>
+                            Founder — <strong>Công Ty Cổ Phần Thương Mại Và Sản Xuất SOMA</strong>
                         </div>
                     </div>
 
@@ -820,7 +873,9 @@
             <div class="timeline">
                 <div class="timeline-item pixel-box">
                     <span class="timeline-year">2024</span>
-                    <h3 class="timeline-title text-cyan">Thành lập TCCM Agency</h3>
+                    <h3 class="timeline-title text-cyan" style="display: flex; align-items: center; gap: 8px;">
+                        <img src="images/tccm-logo.png" alt="TCCM" style="width: 18px; height: 18px; object-fit: contain; filter: drop-shadow(0 0 4px rgba(0,240,255,0.4));"> Thành lập TCCM Agency
+                    </h3>
                     <p class="timeline-desc">Khởi đầu hành trình với agency chuyên về marketing và content creation. Quản lý các page social lớn tại Hải Phòng, freelance marketing content cho nhiều thương hiệu: Homestay, Coffee shop, Store thời trang.</p>
                 </div>
 
@@ -833,11 +888,11 @@
                 <!-- SOMA HIGHLIGHTED -->
                 <div class="timeline-item pixel-box soma-highlight">
                     <span class="timeline-year" style="color: #fff; background: rgba(255,170,0,0.25); border-color: var(--orange);">⭐ 2026</span>
-                    <h3 class="timeline-title text-orange" style="font-size: 13px;">
-                        🏢 Thành lập CÔNG TY TNHH TM & SX SOMA
+                    <h3 class="timeline-title text-orange" style="font-size: 13px; display: flex; align-items: center; gap: 8px;">
+                        <img src="images/soma-logo.png" alt="SOMA" style="width: 18px; height: 18px; object-fit: contain; filter: drop-shadow(0 0 4px rgba(255,170,0,0.4));"> Thành lập CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT SOMA
                     </h3>
                     <p class="timeline-desc">
-                        Đồng sáng lập công ty TNHH SOMA. Một bước ngoặt từ Digital sang sản xuất thực tế — dám bước ra khỏi vùng an toàn.
+                        Đồng sáng lập Công ty Cổ phần SOMA. Một bước ngoặt từ Digital sang sản xuất thực tế — dám bước ra khỏi vùng an toàn.
                     </p>
                 </div>
 
